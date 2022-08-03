@@ -17,7 +17,6 @@ HTTP stands for **Hypertext Transfer Protocol**. It is the communication protoco
 
 Basically, HTTP is a **request - response** based protocol. A web browser or client (e.g. your laptop) sends an HTTP request to a server, and the webserver sends the HTTP response back to the browser. 
 
-The figure below represents this process. On the left we have the client, and on the right we have the web server. The table under the Web server represents a list of resources stored in the web server.
 
 ## **Makeup of an HTTP Request**
 
@@ -52,7 +51,7 @@ An HTTP response follows a format similar to the request format. Following the h
 ### Status codes
 HTTP status codes indicate if the HTTP requests successfully completed. The code values are in the range of a **100 - 599** and are grouped by purpose. The status message, such as 'OK', is a text representation of the status code. We've many times encountered such during our web browsing, where the pages we tried to access displayed 404 (not found) error, or 505 (server not responding) error. These are HTTP status codes with their text representations.
 
-As shown in the figure below, there are five groups of status code:
+There are five groups of status code:
 * **Information** messages are grouped from 100 - 199
 * **Successful** messages are grouped from 200 - 299
 * **Redirection** messages are grouped from 300 - 399
@@ -217,7 +216,7 @@ url_get = 'http://httpbin.org/get'
 
 A query string is a part of a uniform resource locator (URL), that sends other information to the web server. 
 
-The start of the query is a **?**, followed by a series of parameter and value pairs, as shown in the image below. 
+The start of the query is a **?**, followed by a series of parameter and value pairs, like this: `http://httpbin.org/?id='123'&name='David`
 
 The first parameter name is **Name** and the value is **Joseph**. The second parameter name is **ID** and the value is **123**. Each pair, parameter, and value is separated by an equals sign, **=**. The series of pairs is separated by the ampersand **&**.
 
